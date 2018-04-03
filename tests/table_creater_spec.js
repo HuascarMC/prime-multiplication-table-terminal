@@ -29,21 +29,28 @@ describe('TableCreater', function () {
  });
 
  //INTEGRATION TESTS FOR PRIMABLE IN TABLE CREATER
- it('it should be able to use primable isPrime method', function () {
+ it('should be able to use primable isPrime method', function () {
   var result = tableCreater.primable.isPrime(7);
-  assert.strictEqual(result, true)
+  assert.strictEqual(result, true);
  })
 
- it('it should be able to use primable isPrime false method', function () {
+ it('should be able to use primable isPrime false method', function () {
   var result = tableCreater.primable.isPrime(8);
-  assert.strictEqual(result, false)
+  assert.strictEqual(result, false);
  })
 
- it('it should be able to use primable getPrimes method', function() {
-  var actualResult = tableCreater.primable.getPrimes(7);
+ it('should be able to use primable getPrimes method', function () {
+  const actualResult = tableCreater.primable.getPrimes(7);
   const expectedResult = [2, 3, 5, 7];
-  assert.deepEqual(actualResult, expectedResult)
+  assert.deepEqual(actualResult, expectedResult);
  })
+
+  //INTEGRATION TESTS FOR ARRAY CHANGER IN TABLE CREATER
+  it('should be abnle to use increase array method', function () {
+   const actualResult = tableCreater.arrayChanger.increaseArray([2, 3, 5, 7], 3);
+   const expectedResult = [6, 9, 15, 21];
+   assert.deepEqual(actualResult, expectedResult);
+  })
 
 
 
