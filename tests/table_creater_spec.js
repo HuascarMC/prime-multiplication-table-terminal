@@ -28,15 +28,9 @@ describe('TableCreater', function () {
   assert.strictEqual(actualResult, expectedResult)
  });
 
- it('should be able to generate top-index array', function () {
-  const actualResult = tableCreater.createTopIndexArray([2,3,5,7]);
-  const expectedResult = [0,2,3,5,7];
-  assert.deepEqual(actualResult, expectedResult);
- })
-
- it('should be able to add left-index to increased array', function() {
-  const actualResult = tableCreater.addLeftIndexArray([4,6,10,14], 2);
-  const expectedResult = [2,4,6,10,14];
+ it('should be able to add table index', function () {
+  const actualResult = tableCreater.addTableIndex([2,3,5,7], 1);
+  const expectedResult = [1,2,3,5,7];
   assert.deepEqual(actualResult, expectedResult);
  })
 
