@@ -13,6 +13,10 @@ describe('TableCreater', function () {
   assert.exists(tableCreater.primable)
  })
 
+ it('it should have to have array changer property', function () {
+  assert.exists(tableCreater.arrayChanger)
+ })
+
 
 
  it('it should create an array of arrays of prime numbers given a number', function () {
