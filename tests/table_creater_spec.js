@@ -9,6 +9,12 @@ describe('TableCreater', function () {
   tableCreater = new TableCreater();
  });
 
+ it('it should have to have primable property', function () {
+  assert.exists(tableCreater.primable)
+ })
+
+
+
  it('it should create an array of arrays of prime numbers given a number', function () {
   const actualResult = tableCreater.create(5);
   const expectedResult = [[1, 2, 3, 5],
