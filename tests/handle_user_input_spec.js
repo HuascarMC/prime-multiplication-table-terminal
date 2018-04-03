@@ -9,5 +9,8 @@ describe('HandleUserInput', function () {
   handleUserInput = new HandleUserInput();
  });
 
-
+ it('should be able to ask user for number on terminal' function () {
+  const result = handleUserInput.getNumber();
+  assert.strictEqual(result, '7');
+ });
 });
