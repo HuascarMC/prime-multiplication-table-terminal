@@ -9,5 +9,9 @@ escribe('Primable', function () {
   primable = new Primable();
  });
 
+ it('should check if a number is prime', function () {
+  assert.strictEqual(primable.isPrime(7), true)
+ });
+
 
 });
