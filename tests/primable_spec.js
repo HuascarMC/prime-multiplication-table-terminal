@@ -1,7 +1,7 @@
 var assert = require('assert');
 var Primable = require('../models/primable');
 
-escribe('Primable', function () {
+describe('Primable', function () {
 
  var primable;
 
