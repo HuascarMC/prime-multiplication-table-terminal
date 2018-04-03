@@ -6,5 +6,10 @@ var TableCreater = function () {
  this.arrayChanger = new ArrayChanger();
 }
 
+// TableCreater.prototype.create = function(number) {
+//  var result = [];
+//  var primes = this.primable.getPrimes(number);
+//  });
+
 
 module.exports = TableCreater;

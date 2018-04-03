@@ -30,7 +30,7 @@ describe('TableCreater', function () {
 
  //INTEGRATION TESTS
  it('it should be able to use primable isPrime method', function () {
-  var result = this.tableCreater.primable(7);
+  var result = tableCreater.primable.isPrime(7);
   assert.strictEqual(result, true)
  })
 
