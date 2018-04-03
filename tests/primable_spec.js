@@ -17,6 +17,12 @@ escribe('Primable', function () {
  assert.strictEqual(primable.isPrime(4), false)
 });
 
+ it('should get all prime numbers from zero to a given number', function () {
+  const number = 10;
+  result = [2, 3, 5, 7, 9]
+  assert.deepEqual(primable.getPrimes(number), result);
+});
+
 
 
 });
