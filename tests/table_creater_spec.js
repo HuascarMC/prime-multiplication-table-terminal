@@ -27,6 +27,13 @@ describe('TableCreater', function () {
   assert.deepEqual(actualResult, expectedResult)
  });
 
+ it('should not create a table for numbers greater than sixty-seven', function () {
+  const actualResult = tableCreater.create(67);
+  const expectedResult = "Sorry can't create a table for numbers higher than 67"
+
+  assert.deepEqual(actualResult, expectedResult)
+ })
+
  it('should be able to add table index', function () {
   const actualResult = tableCreater.addTableIndex([2,3,5,7], 1);
   const expectedResult = [1,2,3,5,7];
