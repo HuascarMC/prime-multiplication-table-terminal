@@ -1,4 +1,11 @@
-var HandleUserInput = function () {}
+const readline = require('readline');
+var HandleUserInput = function () {
+
+}
+
+// HandleUserInput.prototype.getNumber() {
+//
+// }
 
 
 

@@ -16,4 +16,8 @@ describe('HandleUserInput', function () {
   robot.keyTap('enter');
   assert.strictEqual(result, '7');
  });
+
+ it('should have a readline property', function () {
+  assert(handleUserInput.readline != null)
+ });
 });
