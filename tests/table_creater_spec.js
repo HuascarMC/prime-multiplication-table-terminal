@@ -31,7 +31,13 @@ describe('TableCreater', function () {
  it('should be able to generate top-index array', function () {
   const actualResult = tableCreater.createTopIndexArray([2,3,5,7]);
   const expectedResult = [0,2,3,5,7];
-  assert(actualResult, expectedResult);
+  assert.deepEqual(actualResult, expectedResult);
+ })
+
+ it('should be able to add left-index to increased array', function() {
+  const actualResult = tableCreater.addLeftIndexArray([4,6,10,14], 2);
+  const expectedResult = [2,4,6,10,14];
+  assert.deepEqual(actualResult, expectedResult);
  })
 
  //INTEGRATION TESTS FOR PRIMABLE IN TABLE CREATER
