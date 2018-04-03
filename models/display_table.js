@@ -1,7 +1,8 @@
+const cTable = require('console.table');
 var DisplayTable = function () {}
 
 DisplayTable.prototype.log = function(table) {
- console.log(table);
+ console.table(table);
  return table;
 }
 
