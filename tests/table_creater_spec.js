@@ -21,11 +21,10 @@ describe('TableCreater', function () {
   const actualResult = tableCreater.create(5);
   const expectedResult = [[1, 2, 3, 5],
                           [2, 4, 6, 10],
-                          [3, 6, 18, 15],
+                          [3, 6, 9, 15],
                           [5, 10, 15, 25]]
 
-
-  assert.strictEqual(actualResult, expectedResult)
+  assert.deepEqual(actualResult, expectedResult)
  });
 
  it('should be able to add table index', function () {
