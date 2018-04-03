@@ -28,4 +28,12 @@ describe('TableCreater', function () {
   assert.strictEqual(actualResult, expectedResult)
  });
 
+ //INTEGRATION TESTS
+ it('it should be able to use primable isPrime method', function () {
+  var result = this.tableCreater.primable(7);
+  assert.strictEqual(result, true)
+ })
+
+
+
 });
