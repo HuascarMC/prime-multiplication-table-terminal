@@ -1,7 +1,7 @@
 var assert = require('assert');
 var ArrayChanger = require('../models/array_changer');
 
-describe('array_changer', function () {
+describe('ArrayChanger', function () {
 
  var arrayChanger;
 
