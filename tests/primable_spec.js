@@ -13,5 +13,10 @@ escribe('Primable', function () {
   assert.strictEqual(primable.isPrime(7), true)
  });
 
+ it('should check if a number is not prime', function () {
+ assert.strictEqual(primable.isPrime(4), false)
+});
+
+
 
 });
