@@ -39,6 +39,12 @@ describe('TableCreater', function () {
   assert.strictEqual(result, false)
  })
 
+ it('it should be able to use primable getPrimes method', function() {
+  var actualResult = tableCreater.primable.getPrimes(7);
+  const expectedResult = [2, 3, 5, 7];
+  assert.deepEqual(actualResult, expectedResult)
+ })
+
 
 
 });
