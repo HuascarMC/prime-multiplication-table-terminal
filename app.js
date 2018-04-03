@@ -7,8 +7,9 @@ var tableCreater = new TableCreater();
 var displayTable = new DisplayTable();
 
 rl.question("Choose a number to generate a prime multiplication table: ", function(answer){
- if((typeof parseInt(answer)) == "number") {
+ if(isNaN(answer) == false) {
   console.log("Thank you.");
+  console.log(parseInt(answer))
   var table = tableCreater.create(answer);
   displayTable.log(table);
  } else {
