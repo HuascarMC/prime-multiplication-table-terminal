@@ -17,7 +17,7 @@ describe('TableCreater', function () {
   assert(tableCreater.arrayChanger != null)
  })
 
- it('it should create an array of arrays of prime numbers given a number', function () {
+ it('it should create a table of prime numbers array given a number', function () {
   const actualResult = tableCreater.create(5);
   const expectedResult = [[1, 2, 3, 5],
                           [2, 4, 6, 10],
@@ -27,6 +27,12 @@ describe('TableCreater', function () {
 
   assert.strictEqual(actualResult, expectedResult)
  });
+
+ it('should be able to generate top-index array', function () {
+  const actualResult = tableCreater.createTopIndexArray([2,3,5,7]);
+  const expectedResult = [0,2,3,5,7];
+  assert(actualResult, expectedResult);
+ })
 
  //INTEGRATION TESTS FOR PRIMABLE IN TABLE CREATER
  it('should be able to use primable isPrime method', function () {
