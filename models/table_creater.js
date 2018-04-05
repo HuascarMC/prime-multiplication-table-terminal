@@ -7,7 +7,7 @@ var TableCreater = function () {
 }
 
 TableCreater.prototype.create = function (number) {
- if (number < 67) {
+ if (number <= 67) {
  var result = [];
  var primes = this.primable.getPrimes(number);
  for(var i = -1; i < primes.length; i++) {

@@ -28,7 +28,7 @@ describe('TableCreater', function () {
  });
 
  it('should not create a table for numbers greater than sixty-seven', function () {
-  const actualResult = tableCreater.create(67);
+  const actualResult = tableCreater.create(68);
   const expectedResult = "Sorry can't create a table for numbers higher than 67"
 
   assert.deepEqual(actualResult, expectedResult)
@@ -58,7 +58,7 @@ describe('TableCreater', function () {
  })
 
   //INTEGRATION TESTS FOR ARRAY CHANGER IN TABLE CREATER
-  it('should be abnle to use increase array method', function () {
+  it('should be able to use increase array method', function () {
    const actualResult = tableCreater.arrayChanger.increaseArray([2, 3, 5, 7], 3);
    const expectedResult = [6, 9, 15, 21];
    assert.deepEqual(actualResult, expectedResult);
